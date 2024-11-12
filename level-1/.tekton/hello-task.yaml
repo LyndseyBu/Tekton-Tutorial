@@ -4,9 +4,9 @@ metadata:
   name: hello-task
 spec:
   steps:
-    - name: echo
+    - name: sleep2mins
       image: ubuntu
       command:
-        - echo
+        - sleep
       args:
-        - "hello world"
+        - 120
