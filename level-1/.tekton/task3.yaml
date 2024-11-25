@@ -9,4 +9,4 @@ spec:
       command:
         - sleep
       args:
-        - "400"
+        - "100"
