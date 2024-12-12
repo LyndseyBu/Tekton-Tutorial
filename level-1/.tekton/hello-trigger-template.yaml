@@ -11,4 +11,7 @@ spec:
       spec:
         pipelineRef:
           name: hello-pipeline
+        params:
+    - name: pipeline-name
+      value: "my-pipeline"
 
