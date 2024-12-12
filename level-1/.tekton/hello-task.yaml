@@ -6,7 +6,8 @@ spec:
   steps:
     - name: sleep2mins
       image: ubuntu
-      command:
-        - sleep
-      args:
-        - "60"
+      env:
+      - name: PIPELINE_NAME
+        value: $(params.pipeline-name)
+    script: |
+      echo "Pipeline name is $PIPELINE_NAME"
