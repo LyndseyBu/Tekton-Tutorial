@@ -12,6 +12,9 @@ spec:
     - name: pipeline-hello-task
       taskRef:
         name: hello-task
+      params:
+        - name: pipeline-name
+          value: $(params.pipeline-name)
     - name: pipeline-hello-task2
       taskRef:
         name: hello-task2
