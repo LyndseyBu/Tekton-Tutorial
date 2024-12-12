@@ -13,4 +13,5 @@ spec:
         - name: PIPELINE_NAME
           value: $(params.pipeline-name)
       script: |
+        export PIPELINE_NAME=$(params.pipeline-name)
         echo "Pipeline name is $PIPELINE_NAME"
