@@ -10,4 +10,5 @@ spec:
     - name: sleep2mins
       image: ubuntu
       script: |
+        PIPELINE_NAME=$(params.pipeline-name)
         echo "Pipeline name is $PIPELINE_NAME"
