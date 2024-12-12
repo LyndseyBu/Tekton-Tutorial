@@ -3,6 +3,9 @@ kind: Task
 metadata:
   name: hello-task
 spec:
+  params:
+    - name: pipeline-name
+      type: string
   steps:
     - name: sleep2mins
       image: ubuntu
