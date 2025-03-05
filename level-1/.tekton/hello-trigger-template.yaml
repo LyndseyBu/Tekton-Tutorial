@@ -2,6 +2,7 @@ apiVersion: tekton.dev/v1beta1
 kind: TriggerTemplate
 metadata:
   name: hello-trigger-template
+  namespace: default
 spec:
   resourcetemplates:
     - apiVersion: tekton.dev/v1alpha1
