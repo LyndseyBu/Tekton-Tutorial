@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   triggers:
-    - binding:
+    - bindings:
         name: hello-trigger-binding
       template:
         name: hello-trigger-template
