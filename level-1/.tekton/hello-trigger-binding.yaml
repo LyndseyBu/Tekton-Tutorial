@@ -8,4 +8,4 @@ spec:
     - name: repository
       value: "https://github.com/LyndseyBu/Tekton-Tutorial"
     - name: branch
-      value: "master"
+      value: "beta"
