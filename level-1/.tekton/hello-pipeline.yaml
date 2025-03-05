@@ -5,8 +5,6 @@ metadata:
 spec:
   params:
     - name: pipeline-name
-      type: string
-      value: "my-pipeline"
       description: The name of the pipeline
   tasks:
     - name: pipeline-hello-task
