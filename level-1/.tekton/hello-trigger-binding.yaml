@@ -2,6 +2,7 @@ apiVersion: tekton.dev/v1beta1
 kind: TriggerBinding
 metadata:
     name: hello-trigger-binding
+    namespace: default
 spec:
   params:
     - name: repository
