@@ -3,10 +3,6 @@ kind: Pipeline
 metadata:
   name: hello-pipeline
 spec:
-  params:
-    - name: pipeline-name
-      type: string
-      description: The name of the pipeline
   tasks:
     - name: pipeline-hello-task
       taskRef:
