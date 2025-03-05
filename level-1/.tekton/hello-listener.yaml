@@ -2,7 +2,6 @@ apiVersion: tekton.dev/v1beta1
 kind: EventListener
 metadata:
   name: hello-listener
-  namespace: default
 spec:
   triggers:
     - binding:
