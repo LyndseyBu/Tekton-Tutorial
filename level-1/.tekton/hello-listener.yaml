@@ -6,6 +6,6 @@ metadata:
 spec:
   triggers:
     - bindings:
-        name: hello-trigger-binding
+        - ref: hello-trigger-binding
       template:
-        name: hello-trigger-template
+        ref: hello-trigger-template
