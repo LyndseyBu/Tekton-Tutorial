@@ -13,7 +13,7 @@ spec:
       default: "false"
       description: Whether to skip the task
   tasks:
-  - name: pipeline-hello-task3
+    - name: pipeline-hello-task3
       taskRef:
         name: hello-task3
     - name: skipped-task
