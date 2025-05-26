@@ -1,14 +1,10 @@
-apiVersion: tekton.dev/v1alpha1
+apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
-  name: hello-task
+  name: skipped-task
 spec:
-  params:
-    - name: pipeline-name
-      type: string
   steps:
-    - name: sleep2mins
-      image: ubuntu
+    - name: skip-step
+      image: alpine
       script: |
-        PIPELINE_NAME=$(params.pipeline-name)
-        echo "Pipeline name is $PIPELINE_NAME"
+        echo "This task will be skipped"
