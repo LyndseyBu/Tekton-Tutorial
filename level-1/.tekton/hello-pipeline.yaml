@@ -9,12 +9,13 @@ spec:
       value: "my-pipeline"
       description: The name of the pipeline
   tasks:
-    - name: pipeline-hello-task
+    - name: skipped-task
       taskRef:
-        name: hello-task
-      params:
-        - name: pipeline-name
-          value: $(params.pipeline-name)
+        name: skipped-task
+      when:
+        - input: "$(params.skip)"
+          operator: in
+          values: ["true"]
     - name: pipeline-hello-task2
       taskRef:
         name: hello-task2
