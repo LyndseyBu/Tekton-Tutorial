@@ -6,16 +6,20 @@ spec:
   params:
     - name: pipeline-name
       type: string
-      value: "my-pipeline"
+      default: "my-pipeline"
       description: The name of the pipeline
+    - name: skip
+      type: string
+      default: "false"
+      description: Whether to skip the task
   tasks:
     - name: skipped-task
       taskRef:
         name: skipped-task
       when:
-        - input: "$(params.skip)"
-          operator: in
-          values: ["true"]
+        - input: "$(params.skip)"
+          operator: in
+          values: ["true"]
     - name: pipeline-hello-task2
       taskRef:
         name: hello-task2
