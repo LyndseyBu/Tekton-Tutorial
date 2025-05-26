@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1alpha1
 kind: EventListener
 metadata:
-  name: hello-listener-skip
+  name: hello-listenerskip
 spec:
   triggers:
     - binding:
