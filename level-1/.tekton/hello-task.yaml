@@ -5,6 +5,6 @@ metadata:
 spec:
   steps:
     - name: skip-step
-      image: alpine
+      image: ubuntu
       script: |
         echo "This task will be skipped"
